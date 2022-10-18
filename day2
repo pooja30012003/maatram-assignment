@@ -1,0 +1,30 @@
+Given a input socks short form name as r -> red sock, g -> green sock, b -> blue sock. If all the socks are in pair return true or else return false.
+Input Format
+rgrbgb
+Constraints
+none
+Output Format
+true
+ Solution1
+ 
+ a=input()
+if (a.count("r"))%2==0:
+   if (a.count("g"))%2==0:
+	   if (a.count("b"))%2==0:
+            print("true")
+else:
+	print("false")
+  
+  Solution2
+  
+  s = input()
+s1 = str(set(s))
+b = []
+for i in s1:
+    a = s.count(i)
+    c = a%2
+    b.append(c)
+if b.count(1)==0:
+    print("true")
+else:
+    print("false")
