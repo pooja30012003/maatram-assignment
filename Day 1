@@ -1,0 +1,13 @@
+n=list(map(int,input().split()))
+k=int(input())
+for i in n:
+   for j in n:
+      a=i+j
+      if(a==k):
+print("True")
+
+Output:
+[10,6,7,4]
+k=17
+True 
+ 
