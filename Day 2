@@ -1,0 +1,15 @@
+a=list(map(int,input().split()))
+b=[]
+for i in a:
+	c=1
+	for j in a:
+		if i==j:
+			continue
+		else:
+			c=c*j
+	b.append(c)
+print(b)
+
+Output:
+1 2 3 4 5
+[120,60,40,30,24]
