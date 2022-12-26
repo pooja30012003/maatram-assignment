@@ -1,0 +1,12 @@
+n = int(input())
+c = 1
+s = 0
+for i in str(n):
+    a = int(i)
+    b = a**c
+    s = s+b
+    c += 1
+if n==s :
+   print("true")
+else:
+   print("false")
