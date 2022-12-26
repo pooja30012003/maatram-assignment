@@ -1,0 +1,6 @@
+s = input()
+a = [str(i) for i in input().split()]
+for i in a:
+    if s in i:
+        if i[0] == s[0]:
+            print(i)
